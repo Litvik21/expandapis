@@ -19,7 +19,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
-@Sql({"/sql/create-table-roles.sql", "/sql/create-table-users.sql", "/sql/create-table-users-role.sql", "/sql/initial-roles.sql"})
 public class UserTest {
     @Autowired
     private TestRestTemplate restTemplate;
